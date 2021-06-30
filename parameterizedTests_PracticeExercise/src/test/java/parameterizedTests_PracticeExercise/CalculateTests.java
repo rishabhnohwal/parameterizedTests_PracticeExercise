@@ -12,10 +12,7 @@ class CalculateTests {
 
     @ParameterizedTest
     @CsvSource({"3,4,7","0,0,0","8,-4,4","-6,-4,-10","0,27,27","-1,0,-1",})
-    void givenIntegersThenCheckSum(String s1, String s2, String res){
-        int a= Integer.parseInt(s1);
-        int b= Integer.parseInt(s2);
-        int sum= Integer.parseInt(res);
+    void givenIntegersThenCheckSum(int a, int b, int sum){
         assertEquals(sum,Calculate.addSum(a,b));
     }
 

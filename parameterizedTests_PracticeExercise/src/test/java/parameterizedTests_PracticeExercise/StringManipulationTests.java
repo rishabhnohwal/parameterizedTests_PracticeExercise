@@ -12,8 +12,7 @@ class StringManipulationTests {
 
     @ParameterizedTest
     @CsvSource({"4,RishAbh nOhwaL","0,MYTH","10,aeiouAEIOU","5,you okay bruh"})
-    void givenInputStringThenReturnVowelCount(String s1, String input){
-        int count = Integer.parseInt(s1);
+    void givenInputStringThenReturnVowelCount(int count, String input){
         assertEquals(count,StringManipulation.vowelCount(input));
     }
 
@@ -27,8 +26,7 @@ class StringManipulationTests {
 
     @ParameterizedTest
     @CsvSource({"10,water is dry", "9,no It is not", "0,     ", "6,yeehaw"})
-    void givenInputStringThenReturnCharacterCount(String s1, String input){
-        int count = Integer.parseInt(s1);
+    void givenInputStringThenReturnCharacterCount(int count, String input){
         assertEquals(count,StringManipulation.characterCount(input));
     }
 
