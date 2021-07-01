@@ -11,7 +11,7 @@ class StringManipulationTests {
 //  Vowel Count Test
 
     @ParameterizedTest
-    @CsvSource({"4,RishAbh nOhwaL","0,MYTH","10,aeiouAEIOU","5,you okay bruh"})
+    @CsvSource({"4,gear bear","0,gym","10,aeiouAEIOU","3,vowel words"})
     void givenInputStringThenReturnVowelCount(int count, String input){
         assertEquals(count,StringManipulation.vowelCount(input));
     }
@@ -25,7 +25,7 @@ class StringManipulationTests {
 //    Character Count Tests
 
     @ParameterizedTest
-    @CsvSource({"10,water is dry", "9,no It is not", "0,     ", "6,yeehaw"})
+    @CsvSource({"13,welcome to java", "5,hello", "0,     ", "11,string input"})
     void givenInputStringThenReturnCharacterCount(int count, String input){
         assertEquals(count,StringManipulation.characterCount(input));
     }
